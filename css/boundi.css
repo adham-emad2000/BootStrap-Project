@@ -1,0 +1,191 @@
+:root{
+
+    --darkColour:#19283f;
+    --redColour:#ff3150;
+    --sectionColour:#eff7fa;
+    --greenColour:#33d1cc;
+
+}
+
+.navbar{
+
+background-color: var(--darkColour)
+
+}
+
+.navbar .nav-item .nav-link{
+    color: white;
+}
+
+.search{
+    border-left: 1px solid greenyellow;
+}
+
+.search i {
+    color: greenyellow;
+}
+
+.navbar-toggler{
+    color: white;
+    font-size: 25px;
+}
+
+.main-btn{
+    background-color: var(--redColour);
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.landing{
+    background-color: var(--darkColour);
+ min-height: calc(100vh - 72px);
+ 
+}
+
+
+.main-title i{
+    color: #99990073;
+    font-size: 4rem;
+}
+
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: #19283f;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder{
+    height: 200px;
+}
+
+.icon-holder .number{
+    font-size: 12rem;
+    color: var(--sectionColour);
+}
+
+.icon-holder .icon{
+
+    color: var(--greenColour);
+}
+
+
+.our-work{
+    background-color: var(--sectionColour);
+}
+
+.our-work .active{
+    background-color:var(--redColour);
+    color: white;
+}
+
+
+.our-work li{
+
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+
+}
+
+.our-work li:not(.active):hover{
+
+    color: var(--redColour);
+}
+
+.our-work .box{
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.our-work .box::before{
+
+    content: attr(data-work);
+    position: absolute;
+    background-color: #33d1cc6b;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: translateX(-110%);
+}
+
+
+.our-work .box:hover:before{
+
+    transform: translateX(0);
+}
+
+
+.stuff .description{
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.team{
+    background-color: var(--sectionColour);
+}
+
+.team img{
+    width: 350px;
+    height: 350px;
+}
+
+.team .box h4{
+    background-color: var(--greenColour);
+    
+}
+
+
+.project {
+
+    background-color: var(--darkColour);
+}
+
+
+
+.supscribe{
+    background-color: #ffff0061
+}
+
+.supscribe input[type="submit"]{
+
+    background-color: var(--darkColour);
+    color: white;
+
+}
+
+
+.footer{
+    background-color: var(--darkColour);
+
+}
+
+.footer img{
+    width: 90px;
+}
+
+.footer ul i{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+.navbar img{
+    width: 60px;
+}
+
+
